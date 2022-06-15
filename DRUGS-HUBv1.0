@@ -1,0 +1,164 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Frame.Position = UDim2.new(0.255838633, 0, 0.181969941, 0)
+Frame.Size = UDim2.new(0, 459, 0, 310)
+
+UICorner.CornerRadius = UDim.new(0, 28)
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+TextButton.Position = UDim2.new(0.283224404, 0, 0.44193548, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "IMAGE LOADER"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Urvoge/Roblox/main/fixed-image-loader.lua'))()
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 18)
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+TextButton_2.Position = UDim2.new(0.283224404, 0, 0.251612902, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "ESP"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
+end)
+
+UICorner_3.CornerRadius = UDim.new(0, 18)
+UICorner_3.Parent = TextButton_2
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+TextButton_3.Position = UDim2.new(0.283224404, 0, 0.641935468, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSansBold
+TextButton_3.Text = "CHAT BYPASS"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 18)
+UICorner_4.Parent = TextButton_3
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+TextButton_4.Position = UDim2.new(0.283224404, 0, 0.838709593, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSansBold
+TextButton_4.Text = "INF YIELD"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 18)
+UICorner_5.Parent = TextButton_4
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+TextLabel.Size = UDim2.new(0, 459, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "DRUGS HUBv1.0"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 18)
+UICorner_6.Parent = TextLabel
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_5.Position = UDim2.new(0.897603512, 0, 0.0129032182, 0)
+TextButton_5.Size = UDim2.new(0, 47, 0, 41)
+TextButton_5.Font = Enum.Font.SourceSansBold
+TextButton_5.Text = "X"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:connect(function()
+	local Gui = script.Parent
+
+	function onClicked()
+		script.Parent.Parent.Parent:Remove()
+	end
+end
+
+Gui.MouseButton1Click:connect(onClicked)
+end)
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = TextButton_5
+
+-- Scripts:
+
+local function WLIZVZX_fake_script() -- TextButton_5.Click 
+	local script = Instance.new('Script', TextButton_5)
+
+	local Gui = script.Parent
+	
+	function onClicked()
+	script.Parent.Parent.Parent:Remove()
+	end
+	end
+	
+	Gui.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(WLIZVZX_fake_script)()
+local function YYKKFUT_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Frame 
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(YYKKFUT_fake_script)()
